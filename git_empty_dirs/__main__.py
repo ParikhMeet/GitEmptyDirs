@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 from sys import argv
 from shutil import copy2

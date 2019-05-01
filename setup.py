@@ -1,8 +1,11 @@
 from distutils.core import setup
+import setuptools
+
 setup(
-    name='GitEmptyDirs',         # How you named your package folder
-    packages=['GitEmptyDirs'],   # Chose the same as "name"
-    version='0.1',      # Start with a small number and increase it with every change you make
+    name='git_empty_dirs',         # How you named your package folder
+    packages=setuptools.find_packages(),   # Chose the same as "name"
+    version='0.2',      # Start with a small number and increase it with every change you make
+    scripts=['git_empty_dirs'],
     # Choose a license from here: https://help.github.com/articles/licensing-a-repository
     license='gpl-2.0',
     # Give a short description about your library
