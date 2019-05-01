@@ -15,7 +15,11 @@ def main():
         for elem in listOfEmptyDirs:
             print(elem)
             if len(argv) > 2:
-                copy2(argv[2], elem)
+                try:
+                    copy2(argv[2], elem)
+                except:
+                    print("Could not copy file.")
+                    break
             else:
                 open(os.path.join(elem, ".gitignore"), 'a').close()
 
