@@ -15,7 +15,7 @@ setup(
     # Provide either the link to your repository or to your website
     url='https://github.com/ParikhMeet/GitEmptyDirs',
     # Release url from repository
-    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v_01.tar.gz',
+    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v_02.tar.gz',
     # Keywords that define your package best
     keywords=['Git', 'Empty', 'Directory', 'Directories', 'Folder'],
     install_requires=[            # External libraries
