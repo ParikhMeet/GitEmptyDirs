@@ -4,8 +4,13 @@ import setuptools
 setup(
     name='git_empty_dirs',         # How you named your package folder
     packages=setuptools.find_packages(),   # Chose the same as "name"
-    version='0.2',      # Start with a small number and increase it with every change you make
-    scripts=['git_empty_dirs'],
+    version='0.3',      # Start with a small number and increase it with every change you make
+    # scripts=['git_empty_dirs'],
+    entry_points= {
+        'console_scripts': [
+            'git_empty_dirs = git_empty_dirs.__main__:main',
+        ]
+    },
     # Choose a license from here: https://help.github.com/articles/licensing-a-repository
     license='gpl-2.0',
     # Give a short description about your library
@@ -15,7 +20,7 @@ setup(
     # Provide either the link to your repository or to your website
     url='https://github.com/ParikhMeet/GitEmptyDirs',
     # Release url from repository
-    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v_02.tar.gz',
+    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v_03.tar.gz',
     # Keywords that define your package best
     keywords=['Git', 'Empty', 'Directory', 'Directories', 'Folder'],
     install_requires=[            # External libraries
