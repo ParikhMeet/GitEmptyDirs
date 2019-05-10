@@ -1,10 +1,13 @@
 from distutils.core import setup
 import setuptools
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name='git_empty_dirs',         # How you named your package folder
     packages=setuptools.find_packages(),   # Chose the same as "name"
-    version='0.5',      # Start with a small number and increase it with every change you make
+    version='0.6',      # Start with a small number and increase it with every change you make
     # scripts=['git_empty_dirs'],
     entry_points= {
         'console_scripts': [
@@ -13,6 +16,7 @@ setup(
     },
     # Choose a license from here: https://help.github.com/articles/licensing-a-repository
     license='gpl-2.0',
+    long_description=long_description,
     # Give a short description about your library
     description='Committing Empty Directories to Git :joy::joy::relaxed::relaxed:',
     author='Meet Parikh',                   # Type in your name
@@ -20,7 +24,7 @@ setup(
     # Provide either the link to your repository or to your website
     url='https://github.com/ParikhMeet/GitEmptyDirs',
     # Release url from repository
-    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v0.5.tar.gz',
+    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v0.6.tar.gz',
     # Keywords that define your package best
     keywords=['Git', 'Empty', 'Directory', 'Directories', 'Folder'],
     install_requires=[            # External libraries
