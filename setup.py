@@ -4,7 +4,7 @@ import setuptools
 setup(
     name='git_empty_dirs',         # How you named your package folder
     packages=setuptools.find_packages(),   # Chose the same as "name"
-    version='0.3',      # Start with a small number and increase it with every change you make
+    version='0.4',      # Start with a small number and increase it with every change you make
     # scripts=['git_empty_dirs'],
     entry_points= {
         'console_scripts': [
@@ -20,7 +20,7 @@ setup(
     # Provide either the link to your repository or to your website
     url='https://github.com/ParikhMeet/GitEmptyDirs',
     # Release url from repository
-    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v0.3.tar.gz',
+    download_url='https://github.com/ParikhMeet/GitEmptyDirs/archive/v0.4.tar.gz',
     # Keywords that define your package best
     keywords=['Git', 'Empty', 'Directory', 'Directories', 'Folder'],
     install_requires=[            # External libraries
